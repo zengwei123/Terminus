@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hbrd.Dao.MessageDao">
+    <insert id="InputTerminusMessage" parameterType="com.hbrd.Model.Message">
+         INSERT INTO message VALUES (null,#{CarId},#{CarX},#{CarY},#{CarBasis},#{CarWarning},#{CarBms},#{IsReal},#{IsStatus},#{IsWarning},#{Date},#{Time});
+    </insert>
+</mapper>
